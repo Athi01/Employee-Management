@@ -26,7 +26,3 @@ CREATE TABLE IF NOT EXISTS employees (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
-
--- Insert a demo user (password: password123)
-INSERT INTO users (full_name, email, password) VALUES 
-('Demo User', 'demo@example.com', 'password123');
